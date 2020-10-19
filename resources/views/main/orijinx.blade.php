@@ -35,7 +35,7 @@
                             Разработка
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/"><img src="{{ asset('svg/vault-black-bold.svg') }} "
+                            <a class="dropdown-item" href="/vault"><img src="{{ asset('svg/vault-black-bold.svg') }} "
                                     width="70" alt=""></a>
                             {{-- <a class="dropdown-item" href="#">Another action</a>
                             <div class="dropdown-divider"></div>

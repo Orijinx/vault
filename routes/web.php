@@ -16,19 +16,19 @@ use App\Http\Controllers\OrijinxPageController;
 //Маршрутк, отображающий главную страницу
 // Route::any('/', 'MainController@IndexView');
 
-Route::any('/', [App\Http\Controllers\MainController::class, 'IndexView']);
+Route::any('/vault', [App\Http\Controllers\MainController::class, 'IndexView']);
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/test', function () {
-    return view('test');
-});
+// Route::get('/test', function () {
+//     return view('test');
+// });
 
-Route::get('/logout', function () {
-    Auth::logout();
-    return back();
-});
+// Route::get('/logout', function () {
+//     Auth::logout();
+//     return back();
+// });
 
-Route::get('/orijinx',[OrijinxPageController::class,'IndexView'])->name('index');
+Route::get('/',[OrijinxPageController::class,'IndexView'])->name('index');

@@ -12,6 +12,9 @@ class MainController extends Controller
     public function IndexView(){
         $stat = statistics::latest()->first();
 
-        return view('welcome',compact('stat'));
+        // return view('welcome',compact('stat'));
+        
+            return view('work');
+        
     }
 }
