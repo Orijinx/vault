@@ -6,6 +6,8 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\statistics;
+use Illuminate\Support\Facades\DB;
 
 class User extends Authenticatable
 {
@@ -37,4 +39,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // public static function created(User $user)
+    // {
+    //     //
+    //     $stat_new = new Statistics;
+    //     $stat_old = Statistics::all()->max('id');
+    //     $stat_new->portfolios=$stat_old->portfolios +1;
+    //     $stat_new->documents = $stat_old->documents;
+    //     $stat_new->employers = $stat_old->employers;
+    //     $stat_new->save();
+    // }
+
 }

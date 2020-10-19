@@ -1,28 +1,8 @@
-@extends('layouts.index')
+@extends('layouts.main.header-footer')
 
-
-<!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
-
-<!-- header-start -->
 
 @section('body')
-    <!-- header-end -->
-
-    <!-- bradcam_area  -->
-    <div class="bradcam_area bradcam_bg_1">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="bradcam_text text-center">
-                        <h3>Регистрация</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /bradcam_area  -->
+   
 
     <!-- ================ contact section start ================= -->
     <section class="contact-section section_padding">
